@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+#mn {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  width: 15%;
+  background-color: #ff4831;
+  position: fixed;
+  height: 60%;
+  overflow: hidden;
+
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.po{
+  border-radius: 35%;
+  border-color: green;
+  margin-top: 60px;
+  width: 100%;
+}
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+#home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: orange;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: green;
+  color: white;
+}
+
+#home {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url("C:/Users/hp/Desktop/qw/w1.jpg");
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/w2.jpg');
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/w3.jpg');
+}
+</style>
+</head>
+<body>
+
+<ul id="mn">
+
+  <li><a class="btn" href="#home">Home</a></li>
+  <li><a class="btn" href="#about">About</a></li>
+  <li><a class="btn" href="C:\Users\hp\Desktop\qw\su.html">Suggestions</a></li>
+  <li><a class="btn" href="#contact">Contact</a></li>
+  
+  <li><a href="C:\Users\hp\Desktop\qw\pol.html"><img class="po" src="C:\Users\hp\Desktop\qw\56.jpg"></a></li>
+</ul>
+<main>
+   <section id="home">
+               <div class="section-inner">
+                    <a href="C:\Users\hp\Desktop\qw\pers.html"><img src="C:\Users\hp\Desktop\qw\5.jpg" class="profile-img"></a>
+                    <h1>Hemant Dixit ,<br>Interested In Politics ...</h1>
+                </div>  
+  </section>
+            <section id="about">
+              <div class="section-inner">
+                    <h2>About me</h2>
+                    
+                      <ul type="SQUARE">
+                      <li>My BACK is not a VOICEMAIL , so  better say it on my face.</li>
+                      <li>I am a hot dude with a cool attitude.</li>
+                      <li>Hate girls , Except the girl reading this.</li>
+                        </ul>
+                    
+                   
+                </div>   
+            </section>
+            <section id="contact">
+               <div class="section-inner">
+                    <h2>Contact me</h2>
+                    <p>Using:</p>
+                    <ul>
+                        <li>Text</li>
+                        <li>DM</li>
+                        ....<br>
+                        ....
+                        <li>Sky Writing</li>
+                        <li>Smoke Signal</li>
+                        <li>Call</li>
+                    </ul>
+                    <p>Or, you can <a href="mailto:name@domain">send me an email</a>.</p>
+                </div>  
+            </section>
+        </main>
+        <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("mn");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
