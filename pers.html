@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  overflow: hidden;
+    }
+  #mn {
+  list-style-type: none;
+  margin: 10px;
+  padding: 10px;
+  width: 15%;
+  background-color: #FF7F50;
+  position: fixed;
+  height: 40%;
+  overflow: hidden;
+
+
+}
+#ho{
+  margin-top: 190px;
+    font-size: 100px;
+    color: #CD295A ;
+    font-family: "Lucida Console", "Courier New", monospace; 
+    position: absolute;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 100s linear;
+}
+@-webkit-keyframes rightThenLeft {
+    0%{left: 0%;}
+    25%{left: 49%;}
+    50%{left: 0%;}
+    100%{left: 25%;}
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+
+section {
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-size: cover; /* Add this line */
+    background-position: center center; /* Add this line */
+    background-repeat: no-repeat; /* Add this line */
+    background-attachment: fixed; /* Add this line */
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    font-size: 2.5em;
+}
+
+section h3 {
+    font-size: 1.5em;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+#home .profile-img {
+    width: 300px;
+    border-radius: 50%;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  background-color: #ff4831;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active, .btn:hover {
+  background-color: green;
+  color: white;
+}
+
+#home {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url("C:/Users/hp/Desktop/qw/w1.jpg");
+}
+
+#about {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/w2.jpg');
+}
+
+#contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/w3.jpg');
+}
+.bac{
+  margin-left: 55px;
+  width: 30%;
+}
+#hoo {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/x2.jpg');
+}
+.prof{
+  width: 300px;
+    border-radius: 30%; 
+     margin-top: -20%;
+     border: 5px solid navy;
+
+
+}
+.section-inner1{
+    font-size: 35px;
+}
+
+.section-inner{
+    font-size: 15px;
+}
+.l1{
+    color: #A52A2A;
+ font-family: Fixed, monospace;
+}
+.p1{
+    color: #DC143C;
+    font-family: Brushstroke,fantasy;
+}
+.l2{
+    color: #FF4500;
+    font-family: Fixed, monospace;
+}
+.p2{
+    color: #006400;
+    font-family: Brushstroke,fantasy;
+}
+.l3{
+    color: #FF00FF;
+   font-family: Fixed, monospace;
+}
+.p3{
+    color: #4B0082;
+    font-family: Brushstroke,fantasy;
+}
+
+#edu {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/x3.jpg');
+}
+#hobbi {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/q1.png');
+}
+#fri {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/x2.jpg');
+}
+#fam {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('C:/Users/hp/Desktop/qw/x1.jpg');
+}
+.mb1{
+    border-radius: 200%;
+    width: 20%;
+    margin-left: 5cm;
+   border-color: orange;
+   margin-top: -2cm;
+   }
+
+   .mb2{
+    border-radius: 50%;
+    width: 20%;
+    margin-left: 5cm;
+   border-color: red;
+   margin-top: -1cm;
+   }
+.up{
+   margin-top: 1cm;
+   margin-left: 13cm;
+   font-family: "Times New Roman", Times,serif;
+   color: orange;
+   font-size: 100px;
+   text-align: left;
+}
+.zx{
+  word-spacing: 7cm;
+  margin-left: 4cm;
+  color: navy;
+  font-family: Brushstroke,fantasy;
+  font-size: 25px;
+}
+
+
+
+
+
+/* Person */
+.person {
+    border: 5px solid black;
+    padding: 20px;
+    min-width: 130px;
+    background-color: #FFFFFF;
+    display: inline-block;
+
+}
+
+.person.female {
+    border-color: #F45B69;
+}
+
+.person.male {
+    border-color: #456990;
+}
+
+.person div {
+    text-align: center;
+}
+
+.person .name {
+    font-size: 16px;
+}
+
+.person .parentDrop, .person .spouseDrop, .person .childDrop {
+    border: 1px dashed #000000;
+    width: auto;
+    min-width: 80px;
+    min-height: 80px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding-top: 15px;
+}
+
+.person .parentDrop>span,
+.person .spouseDrop>span,
+.person .childDrop>span {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-weight: bold;
+}
+.parentDrop>.person,
+.spouseDrop>.person,
+.childDrop>.person {
+    margin-top: 20px;
+}
+
+/* Tree */
+.tree ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+.tree li {
+    display: table-cell;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
+
+
+
+/*We will use ::before and ::after to draw the connectors*/
+.tree li::before, .tree li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 1px solid #ccc;
+    width: 50%;
+    height: 20px;
+}
+
+.tree li::after {
+    right: auto;
+    left: 50%;
+    border-left: 1px solid #ccc;
+}
+
+/*We need to remove left-right connectors from elements without 
+any siblings*/
+.tree li:only-child::after, .tree li:only-child::before {
+    display: none;
+}
+
+/*Remove space from the top of single children*/
+.tree li:only-child {
+    padding-top: 0;
+}
+
+/*Remove left connector from first child and 
+right connector from last child*/
+.tree li:first-child::before, .tree li:last-child::after {
+    border: 0 none;
+}
+/*Adding back the vertical connector to the last nodes*/
+.tree li:last-child::before {
+    border-right: 1px solid #ccc;
+    border-radius: 0 5px 0 0;
+    -webkit-border-radius: 0 5px 0 0;
+    -moz-border-radius: 0 5px 0 0;
+}
+
+.tree li:first-child::after {
+    border-radius: 5px 0 0 0;
+    -webkit-border-radius: 5px 0 0 0;
+    -moz-border-radius: 5px 0 0 0;
+}
+
+/*Time to add downward connectors from parents*/
+.tree ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    width: 0;
+    height: 20px;
+}
+
+.tree li .parent {
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    margin-top: 10px;
+}
+.tree li .parent::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    width: 3px;
+    height: 10px;
+}
+.tree li .family {
+    position: relative;
+}
+.tree li .family .spouse {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: 95px;
+}
+.tree li .family .spouse::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    width: 10px;
+    height: 3px;
+}
+
+/*Time for some hover effects*/
+/*We will apply the hover effect the the lineage of the element also*/
+.tree li .child:hover,
+.tree li .child:hover+.parent .person,
+.tree li .parent .person:hover,
+.tree li .child:hover+.parent .person+ul li .child,
+.tree li .parent .person:hover+ul li .child,
+.tree li .child:hover+.parent .person+ul li .parent .person,
+.tree li .parent .person:hover+ul li .parent .person {
+    background: #c8e4f8;
+    color: #000;
+    border: 1px solid black;
+}
+/*Connector styles on hover*/
+.tree li .child:hover+.parent::before,
+.tree li .child:hover+.parent .person+ul li::after,
+.tree li .parent .person:hover+ul li::after,
+.tree li .child:hover+.parent .person+ul li::before,
+.tree li .parent .person:hover+ul li::before,
+.tree li .child:hover+.parent .person+ul::before,
+.tree li .parent .person:hover+ul::before,
+.tree li .child:hover+.parent .person+ul ul::before,
+.tree li .parent .person:hover+ul ul::before {
+    border-color: black;
+}
+
+.p_01{
+    width: 150px;
+}
+
+.ios1{
+  width:10%;
+  margin-top: 10px;
+}
+.ed{
+font-size: 5px;
+font-family: Impact, fantasy;
+color: brown;
+          }
+          .ma{
+            font-size: 5px;
+            font-family: Parkavenue, cursive;
+            color: blue;
+          }
+          .bv{
+            line-height: -1290px;
+          }
+          .xc{
+            width: 50%;
+          }
+
+
+
+
+
+   #hobbi {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: black;
+      }
+      .cd {
+        position: relative;
+        font-family: Impact, sans-serif;
+        font-size: 45px;
+        letter-spacing: 2px;
+        background: linear-gradient(90deg, #90EE90, #fff, #000);
+        background-repeat: no-repeat;
+        background-size: 80%;
+        animation: animate 5s infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(255, 255, 255, 0);
+      }
+      @keyframes animate {
+        0% {
+          background-position: -500%;
+        }
+        100% {
+          background-position: 500%;
+        }
+      }
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<ul id="mn">
+  <li><a href="C:\Users\hp\Desktop\jkl.html"><img class="bac" src="C:\Users\hp\Desktop\ty\back.png"></a></li>
+  <li><a class="btn" href="#edu">Education</a></li>
+  <li><a class="btn" href="#fam">Family</a></li>
+  <li><a class="btn" href="#fri">Friends</a></li>
+  <li><a class="btn" href="#hobbi">Hobbies</a></li>
+  <li><a class="btn" href="C:\Users\hp\Desktop\qw\dixitabout.html">About</a></li>
+</ul>
+<main>
+
+
+                   <section id="hoo">
+                  <table>
+                  <tr><td align="center">  <img src="C:\Users\hp\Desktop\qw\h13.jpeg" class="prof"></td>
+               
+                </tr>
+                </table> <br>  
+                <div><p id="ho"> Hemant Dixit </p></div>
+                    </section>
+
+
+
+             <section id="edu">
+               <div class="section-inner1">
+                   <ul type="square">
+                    <li class="l1">SENIOR HIGH SCHOOL (10th)</li>
+                    <p class="p1">SUGHAR SINGH ACADEMY
+                    <br>"Graduated in 2017"</p>
+                       <li class="l2">PREPARATORY SCHOOL (12th)</li>
+                    <p class="p2">SUGHAR SINGH ACADEMY
+                    <br>"Graduated in 2019"</p>
+                    <li class="l3">GRADUATION</li>
+                    <p class="p3">PRANVEER SINGH INSTITUTE OF TECHNOLOGY
+                    <br>"Expected To Graduate in 2023"</p>
+                </ul>
+                </div>  
+            </section>
+   
+           
+            <section id="fri">
+               <div class="section-inner1">
+                    <h1 class="up" align="left">Companions</h1><br>
+              <img src="C:\Users\hp\Desktop\qw\ash.jpeg" class="mb1" border="4">
+              <img src="C:\Users\hp\Desktop\qw\me.jpeg" class="mb2" border="4">
+              <br>
+              <p class="zx">Ashvendra_Pratap_Singh Hemant_Tolani</p>
+                </div>  
+            </section>
+
+
+              <section id="hobbi">
+               <div class="section-inner12">
+                   <ul type="square">
+                    <li class="cd">Like to watch interviews of great politicians</li>
+                    <li class="cd">Like to play cricket</li>
+                    <li class="cd">Like to read auto bio. Of great leaders</li>
+                    <li class="cd">Like to travell</li>
+                   
+                </ul>
+                </div>  
+            </section>
+            
+            
+            <section id="fam">
+              <div class="section-inner1">
+                 <div class="tree">
+<ul>
+<li>
+    
+    <div class="parent">
+      <div class="person female">
+        <div class="name"><img class="p_01" src="C:\Users\hp\Desktop\qw\he1.jpeg"></div>
+      </div>
+      <ul>
+       
+       
+        <li>
+          <div class="family" style="width: 344px">
+            <div class="person child female">
+              <div class="name"><img class="p_01" src="C:\Users\hp\Desktop\qw\he3.jpeg"></div>
+            </div>
+            
+              <ul>
+                <li>
+                  <div class="person child male">
+                    <div class="name"><img class="p_01" src="C:\Users\hp\Desktop\qw\he2.jpeg"></div>
+                  </div>
+                </li>
+                 <li>
+                  <div class="person child male">
+                    <div class="name"><img class="p_01" src="C:\Users\hp\Desktop\qw\he4.jpeg"></div>
+                  </div>
+                </li>
+                 <li>
+                  <div class="person child male">
+                    <div class="name"><img class="p_01" src="C:\Users\hp\Desktop\qw\h15.jpeg"></div>
+                  </div>
+                </li>
+              </ul>   
+                </div>   
+            </section>
+
+           
+        </main>
+        <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("mn");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>
