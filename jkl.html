@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+        <title>Hemant & Hemant</title>  
 <style>
 body {
   margin: 0;
@@ -92,6 +93,46 @@ header a {
 #contact {
     background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://selfietech.github.io/website/w3.jpg');
 }
+
+.sd { 
+      position: absolute; 
+      top: 40%; 
+      left: 40%; 
+      transform: translate(-50%, -50%); 
+      width: 80px; 
+      height: 10px; 
+      color: white; 
+      text-decoration: none; 
+      text-align: center; 
+      padding-top: 10px;
+      padding-bottom: 20px; 
+      font-size: 20px; 
+      overflow: hidden; 
+      background: green; 
+      margin-top: 250px;
+      margin-left: 20px;
+    } 
+
+    .sd::before { 
+      content: ""; 
+      position: absolute; 
+      width: 0; 
+      height: 0; 
+      left: 0; 
+      bottom: 0; 
+      border-style: solid; 
+      border-color: #f00; 
+      border-width: 80px 100px; 
+      z-index: -1; 
+      transform: rotate(360deg); 
+      transition: 1s; 
+      transform-origin: left; 
+    } 
+
+    .sd:hover::before { 
+      border-color: #00f; 
+      transform: rotate(60deg); 
+    } 
 </style>
 </head>
 <body>
@@ -102,6 +143,7 @@ header a {
   <li><a class="btn" href="#about">About</a></li>
   <li><a class="btn" href="https://selfietech.github.io/website/su.html">Suggestions</a></li>
   <li><a class="btn" href="#contact">Contact</a></li>
+  <li><a class="sd" href="https://selfietech.github.io/modify/hemant.html">Switch</a></li>
   
   <li><a href="https://selfietech.github.io/website/pol.html"><img class="po" src="https://selfietech.github.io/website/56.jpg"></a></li>
 </ul>
